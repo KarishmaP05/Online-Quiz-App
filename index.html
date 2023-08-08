@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Exam Form</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+<section class="container">
+    <form method="POST" action="http://localhost/exam-form/exam-form.php">
+
+        <!-- The value of "name" attributes in each "input" tag is required to enter data in database. 
+        Carefully see the value of "name" attributes and "lines numbers 12 to 27" of the PHP file. -->
+
+        <div class="info">
+            <label class="label">Name</label><br>
+            <input class="input" name="name" type="text" maxlength="256" placeholder="John Luice" required>
+
+            <br>
+            
+            <label class="label">Class</label><br>
+            <input class="input" name="class" type="text" maxlength="30" placeholder="FE-CMPN" required>
+
+            <br>
+            
+            <label class="label">Seat No.</label><br>
+            <input class="input" name="seatno" type="text" maxlength="15" placeholder="20210670" required>
+
+            <br>
+            
+            <label class="label">Course</label><br>
+            <input class="input" name="course" type="text" maxlength="30" placeholder="Computer Engineering" required>
+
+            <br>
+            
+            <label class="label">Subject</label><br>
+            <input class="input" name="subject" type="text" maxlength="30" placeholder="Engineering Mathematics" required>
+
+            <br>
+            
+            <label class="label">Email Address</label><br>
+            <input class="input last-info" name="email" type="email" maxlength="30" placeholder="xyz@example.com" required>
+        </div>
+
+        <!-- If user will choose option 1, then the valuse stored in the database will be "1". 
+        And the same thing will happen for options 2, 3 and 4. -->
+
+        <div class="mcqs">
+            <label class="questions">
+                <strong>Que. 1: </strong>
+                who is the prime minister of india?
+            </label><br>
+            <input class="choices first-choice" name="que1" type="radio" value="1" required> narendra modi<br>
+            <input class="choices" name="que1" type="radio" value="2" required> abdul kalam<br>
+            <input class="choices" name="que1" type="radio" value="3" required> sharad pawar<br>
+            <input class="choices last-choice" name="que1" type="radio" value="4" required> devendra fadnvis<br>
+
+            <label class="questions">
+                <strong>Que. 2: </strong>
+                which type of lens is used in the camera?
+            </label><br>
+            <input class="choices first-choice" name="que2" type="radio" value="1" required> concave<br>
+            <input class="choices" name="que2" type="radio" value="2" required> convex<br>
+            <input class="choices" name="que2" type="radio" value="3" required> circular shape<br>
+            <input class="choices last-choice" name="que2" type="radio" value="4" required> equal thickness<br>
+
+            <label class="questions">
+                <strong>Que. 3: </strong>
+                what is the height of the three wooden stumps in cricket?
+            </label><br>
+            <input class="choices first-choice" name="que3" type="radio" value="1" required> 21 inches<br>
+            <input class="choices" name="que3" type="radio" value="2" required> 28 inches<br>
+            <input class="choices" name="que3" type="radio" value="3" required> 27 inches<br>
+            <input class="choices last-choice" name="que3" type="radio" value="4" required> none of these<br>
+
+            <label class="questions">
+                <strong>Que. 4: </strong>
+                who is the first indian field marshell?
+            </label><br>
+            <input class="choices first-choice" name="que4" type="radio" value="1" required> jamshedji manekshaw<br>
+            <input class="choices" name="que4" type="radio" value="2" required> arjan singh<br>
+            <input class="choices" name="que4" type="radio" value="3" required> jagjit singh aurora<br>
+            <input class="choices last-choice" name="que4" type="radio" value="4" required> a.a.k.niazi<br>
+
+            <label class="questions">
+                <strong>Que. 5: </strong>
+                where is the wular lake situated in india?
+            </label><br>
+            <input class="choices first-choice" name="que5" type="radio" value="1" required> utterpradesh<br>
+            <input class="choices" name="que5" type="radio" value="2" required> himachal pradesh<br>
+            <input class="choices" name="que5" type="radio" value="3" required> kerala<br>
+            <input class="choices last-choice" name="que5" type="radio" value="4" required> jammu and kashmir<br>
+
+            <label class="questions">
+                <strong>Que. 6: </strong>
+                who was the first female IPS officer in india? 
+            </label><br>
+            <input class="choices first-choice" name="que6" type="radio" value="1" required> Kiran bedi<br>
+            <input class="choices" name="que6" type="radio" value="2" required> anna rajan malhotra<br>
+            <input class="choices" name="que6" type="radio" value="3" required> grace morley<br>
+            <input class="choices last-choice" name="que6" type="radio" value="4" required> renuka ray<br>
+
+            <label class="questions">
+                <strong>Que. 7: </strong>
+                who composed the indian national antheem?
+            </label><br>
+            <input class="choices first-choice" name="que7" type="radio" value="1" required> satyajit<br>
+            <input class="choices" name="que7" type="radio" value="2" required> mohandas karamchand ganghi<br>
+            <input class="choices" name="que7" type="radio" value="3" required> swami vivekanand<br>
+            <input class="choices last-choice" name="que7" type="radio" value="4" required> rabindranath tagore<br>
+
+            <label class="questions">
+                <strong>Que. 8: </strong>
+                when we celebrate the indian post day?
+            </label><br>
+            <input class="choices first-choice" name="que8" type="radio" value="1" required> 10 october<br>
+            <input class="choices" name="que8" type="radio" value="2" required> 9 october<br>
+            <input class="choices" name="que8" type="radio" value="3" required> 15 october<br>
+            <input class="choices last-choice" name="que8" type="radio" value="4" required> none<br>
+
+            <label class="questions">
+                <strong>Que. 9: </strong>
+              when we celebrate the indian navy day?
+            </label><br>
+            <input class="choices first-choice" name="que9" type="radio" value="1" required> 4 december<br>
+            <input class="choices" name="que9" type="radio" value="2" required> 4 november<br>
+            <input class="choices" name="que9" type="radio" value="3" required> 6 march<br>
+            <input class="choices last-choice" name="que9" type="radio" value="4" required> 15 august<br>
+
+            <label class="questions">
+                <strong>Que. 10: </strong>
+                U.S.A what is the currency of it?
+            </label><br>
+            <input class="choices first-choice" name="que10" type="radio" value="1" required> doller<br>
+            <input class="choices" name="que10" type="radio" value="2" required> pound<br>
+            <input class="choices" name="que10" type="radio" value="3" required> euro<br>
+            <input class="choices" name="que10" type="radio" value="4" required> frank
+        </div>
+
+        <!-- For now, you can only enter 10 questions. 
+        If you want to enter less or more questions than 10, 
+        then remove or add 
+
+            <label class="questions">
+                <strong>Que. : </strong>
+                Question...
+            </label><br>
+            <input class="choices first-choice" name="que10" type="radio" value="1" required> Option 1<br>
+            <input class="choices" name="que10" type="radio" value="2" required> Option 2<br>
+            <input class="choices" name="que10" type="radio" value="3" required> Option 3<br>
+            <input class="choices" name="que10" type="radio" value="4" required> Option 4
+
+        this sections accordingly. 
+        And also change the database accordingly. -->
+
+        <center><input type="submit" value="Submit" required></center>
+    </form>
+</section>
+
+</body>
+</html>
